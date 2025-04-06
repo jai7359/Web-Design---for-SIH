@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      max-width: 1000px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .text-column {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .image-column {
+      flex: 1;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: #ff6f61;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #ff6f61;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff3b2f;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Text Column -->
+    <div class="text-column">
+      <h1>404</h1>
+      <p>Oops! The page you're looking for can't be found.</p>
+      <button onclick="goHome()">Go Back Home</button>
+    </div>
+
+    <!-- Image Column -->
+    <div class="image-column">
+      <img src="img.jpg" alt="Error Image">
+    </div>
+  </div>
+
+  <script>
+    function goHome() {
+      window.location.href = 'index.html'; // Redirect back to the landing page
+    }
+  </script>
+</body>
+</html>
